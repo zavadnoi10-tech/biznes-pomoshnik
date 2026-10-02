@@ -173,8 +173,8 @@ class BusinessChat {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${CONFIG.GROQ_API_KEY}`,
-          'HTTP-Referer': 'https://zavadnoi10-tech.github.io/biznes-pomoshnik/',
-          'X-Title': 'BiznesPomoshnik',
+          'HTTP-Referer': '...',
+'X-Title': '...',
         },
         body: JSON.stringify(payload),
       });
