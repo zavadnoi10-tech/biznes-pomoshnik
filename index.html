@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>БизнесПомощник — AI консультант для малого бизнеса</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/chat.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__logo">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">БизнесПомощник</span>
+      </div>
+      <nav class="header__nav">
+        <a href="#about">О сервисе</a>
+        <a href="#topics">Темы</a>
+        <a href="#faq">FAQ</a>
+        <a href="#chat" class="nav-cta">Задать вопрос</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content fade-in-up">
+          <span class="hero__badge">AI-консультант 24/7</span>
+          <h1 class="hero__title">Ответы на вопросы<br>малого бизнеса</h1>
+          <p class="hero__sub">Получите профессиональный совет по регистрации, налогам, найму сотрудников и развитию бизнеса — мгновенно и бесплатно.</p>
+          <div class="hero__actions">
+            <a href="#chat" class="btn btn--primary">Начать консультацию</a>
+            <a href="#topics" class="btn btn--outline">Что я умею?</a>
+          </div>
+        </div>
+        <div class="hero__visual fade-in-right">
+          <div class="hero__card hero__card--1 float-1">
+            <span class="card-icon">📋</span>
+            <p>Регистрация ООО или ИП</p>
+          </div>
+          <div class="hero__card hero__card--2 float-2">
+            <span class="card-icon">💰</span>
+            <p>Налоговые режимы</p>
+          </div>
+          <div class="hero__card hero__card--3 float-3">
+            <span class="card-icon">👥</span>
+            <p>Найм и кадры</p>
+          </div>
+          <div class="hero__card hero__card--4 float-1">
+            <span class="card-icon">📈</span>
+            <p>Масштабирование</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stat-item count-up">
+            <span class="stat-num" data-target="500">0</span><span>+</span>
+            <p>вопросов отвечено</p>
+          </div>
+          <div class="stat-item count-up">
+            <span class="stat-num" data-target="12">0</span>
+            <p>тем бизнеса</p>
+          </div>
+          <div class="stat-item count-up">
+            <span class="stat-num" data-target="3">0</span><span>с</span>
+            <p>среднее время ответа</p>
+          </div>
+          <div class="stat-item count-up">
+            <span class="stat-num" data-target="100">0</span><span>%</span>
+            <p>бесплатно</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2>Как это работает</h2>
+          <p>Три шага до ответа на ваш вопрос</p>
+        </div>
+        <div class="steps">
+          <div class="step slide-in-left">
+            <div class="step__number">01</div>
+            <div class="step__content">
+              <h3>Задайте вопрос</h3>
+              <p>Опишите свою ситуацию в чате — чем подробнее, тем точнее ответ.</p>
+            </div>
+          </div>
+          <div class="step slide-in-left" style="--delay: 0.15s">
+            <div class="step__number">02</div>
+            <div class="step__content">
+              <h3>AI анализирует</h3>
+              <p>Система анализирует ваш запрос с учётом законодательства и практики.</p>
+            </div>
+          </div>
+          <div class="step slide-in-left" style="--delay: 0.3s">
+            <div class="step__number">03</div>
+            <div class="step__content">
+              <h3>Получите ответ</h3>
+              <p>Чёткий, структурированный совет с конкретными шагами и рекомендациями.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="topics" id="topics">
+      <div class="container">
+        <div class="section-header">
+          <h2>Темы консультаций</h2>
+          <p>Всё, что нужно знать начинающему и действующему предпринимателю</p>
+        </div>
+        <div class="topics__grid">
+          <div class="topic-card pop-in">
+            <div class="topic-card__icon">🏢</div>
+            <h3>Регистрация бизнеса</h3>
+            <p>ООО, ИП, самозанятость — выбор формы и порядок регистрации</p>
+          </div>
+          <div class="topic-card pop-in" style="--delay: 0.1s">
+            <div class="topic-card__icon">🧾</div>
+            <h3>Налоги и отчётность</h3>
+            <p>УСН, ОСНО, патент — расчёт налоговой нагрузки и сроки сдачи</p>
+          </div>
+          <div class="topic-card pop-in" style="--delay: 0.2s">
+            <div class="topic-card__icon">👔</div>
+            <h3>Кадровый учёт</h3>
+            <p>Трудовые договоры, взносы, увольнение и оформление сотрудников</p>
+          </div>
+          <div class="topic-card pop-in" style="--delay: 0.3s">
+            <div class="topic-card__icon">🏦</div>
+            <h3>Финансы и кредиты</h3>
+            <p>Кредиты для бизнеса, субсидии, расчётный счёт и банковское обслуживание</p>
+          </div>
+          <div class="topic-card pop-in" style="--delay: 0.4s">
+            <div class="topic-card__icon">📜</div>
+            <h3>Договоры и право</h3>
+            <p>Составление договоров, защита прав предпринимателя, споры</p>
+          </div>
+          <div class="topic-card pop-in" style="--delay: 0.5s">
+            <div class="topic-card__icon">📊</div>
+            <h3>Маркетинг и продажи</h3>
+            <p>Привлечение клиентов, реклама, позиционирование на рынке</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chat-section" id="chat">
+      <div class="container">
+        <div class="section-header">
+          <h2>Задайте вопрос AI-консультанту</h2>
+          <p>Бесплатная консультация по любому вопросу малого бизнеса</p>
+        </div>
+        <div class="chat-wrapper fade-in-up">
+          <div class="chat-panel" id="chatPanel">
+            <div class="chat-header">
+              <div class="chat-header__info">
+                <div class="chat-avatar">
+                  <span>AI</span>
+                  <span class="online-dot"></span>
+                </div>
+                <div>
+                  <strong>БизнесПомощник</strong>
+                  <small>Онлайн — готов помочь</small>
+                </div>
+              </div>
+              <button class="chat-clear" id="clearChat" title="Очистить чат">✕</button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+              <div class="message message--bot">
+                <div class="message__avatar">AI</div>
+                <div class="message__body">
+                  <p>Здравствуйте! Я AI-консультант по вопросам малого бизнеса.</p>
+                  <p>Спрашивайте о регистрации, налогах, кадрах, финансах или развитии вашего бизнеса — отвечу подробно и на конкретных примерах.</p>
+                  <div class="quick-prompts">
+                    <button class="quick-btn" data-prompt="Как зарегистрировать ИП?">Как зарегистрировать ИП?</button>
+                    <button class="quick-btn" data-prompt="Какой налоговый режим выбрать?">Какой налог выбрать?</button>
+                    <button class="quick-btn" data-prompt="Как оформить первого сотрудника?">Первый сотрудник</button>
+                    <button class="quick-btn" data-prompt="Как получить кредит для малого бизнеса?">Кредит для бизнеса</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="chat-input-area">
+              <div class="chat-input-wrap">
+                <textarea
+                  id="chatInput"
+                  placeholder="Введите ваш вопрос..."
+                  rows="1"
+                  maxlength="2000"
+                ></textarea>
+                <button class="send-btn" id="sendBtn" aria-label="Отправить">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </div>
+              <p class="chat-disclaimer">AI даёт общие рекомендации. По сложным вопросам проконсультируйтесь с профильным специалистом.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <h2>Часто задаваемые вопросы</h2>
+        </div>
+        <div class="faq__list">
+          <div class="faq-item">
+            <button class="faq-question">Это бесплатно?<span class="faq-arrow">▾</span></button>
+            <div class="faq-answer"><p>Да, полностью бесплатно. AI-консультант доступен 24/7 без регистрации и ограничений по количеству вопросов.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Насколько точны ответы?<span class="faq-arrow">▾</span></button>
+            <div class="faq-answer"><p>Ответы основаны на актуальном российском законодательстве и практике. Для принятия важных решений рекомендуем дополнительно проконсультироваться с бухгалтером или юристом.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Сохраняется ли история чата?<span class="faq-arrow">▾</span></button>
+            <div class="faq-answer"><p>История хранится только в рамках текущей сессии браузера и не передаётся на серверы. Закрытие вкладки очищает историю.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Какие темы поддерживаются?<span class="faq-arrow">▾</span></button>
+            <div class="faq-answer"><p>Регистрация бизнеса, налоги, бухгалтерия, кадровый учёт, договоры, кредиты, маркетинг и стратегия развития малого бизнеса в России.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__brand">
+          <span class="logo-icon">◈</span>
+          <span class="logo-text">БизнесПомощник</span>
+          <p>AI-консультант для малого бизнеса</p>
+        </div>
+        <div class="footer__links">
+          <a href="#about">О сервисе</a>
+          <a href="#topics">Темы</a>
+          <a href="#chat">Консультация</a>
+          <a href="#faq">FAQ</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 БизнесПомощник. Информация носит ознакомительный характер.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+
+  <script src="js/config.js"></script>
+  <script src="js/chat.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
