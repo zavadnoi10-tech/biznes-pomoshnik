@@ -173,8 +173,6 @@ class BusinessChat {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${CONFIG.GROQ_API_KEY}`,
-          'HTTP-Referer': '...',
-'X-Title': '...',
         },
         body: JSON.stringify(payload),
       });
